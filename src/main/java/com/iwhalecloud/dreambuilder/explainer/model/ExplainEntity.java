@@ -1,7 +1,9 @@
 package com.iwhalecloud.dreambuilder.explainer.model;
 
 /**
- * @author wang.chenghong
+ * 对应explain的执行结果对象
+ *
+ * @author bfSan
  * @date 2019/9/30
  */
 public class ExplainEntity {

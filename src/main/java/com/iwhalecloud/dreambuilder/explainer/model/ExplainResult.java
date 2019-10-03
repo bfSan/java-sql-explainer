@@ -3,6 +3,8 @@ package com.iwhalecloud.dreambuilder.explainer.model;
 import java.util.List;
 
 /**
+ * 封装的explain执行结果
+ *
  * @author bfSan
  * @date 2019/9/29
  */
