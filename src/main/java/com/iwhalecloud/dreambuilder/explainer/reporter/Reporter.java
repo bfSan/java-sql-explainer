@@ -1,6 +1,6 @@
 package com.iwhalecloud.dreambuilder.explainer.reporter;
 
-import com.iwhalecloud.dreambuilder.explainer.model.ExplainBean;
+import com.iwhalecloud.dreambuilder.explainer.model.ExplainContext;
 
 import java.io.OutputStream;
 import java.util.List;
@@ -10,5 +10,5 @@ import java.util.List;
  * @date 2019/9/30
  */
 public interface Reporter {
-    void generateReport(List<ExplainBean> explainBeans, OutputStream outputStream);
+    void generateReport(List<ExplainContext> explainContexts, OutputStream outputStream);
 }
