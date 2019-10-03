@@ -6,7 +6,7 @@ import java.util.List;
  * 封装的explain执行结果
  *
  * @author bfSan
- * @date 2019/9/29
+ * @date 2019/10/3
  */
 public class ExplainBean {
     private String sqlScript;

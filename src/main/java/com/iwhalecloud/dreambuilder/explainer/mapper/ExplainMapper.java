@@ -7,6 +7,10 @@ import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
+/**
+ * @author bfSan
+ * @date 2019/10/3
+ */
 @Mapper
 public interface ExplainMapper {
     @Select("explain ${sql}")
