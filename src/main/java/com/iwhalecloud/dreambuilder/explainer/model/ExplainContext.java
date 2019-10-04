@@ -7,7 +7,7 @@ package com.iwhalecloud.dreambuilder.explainer.model;
 public class ExplainContext {
     private ExplainBean explainBean;
     private String methodName;
-    private String mapperClassName;
+    private String mapperResourceName;
 
     public ExplainContext() {
     }
@@ -16,15 +16,15 @@ public class ExplainContext {
         this.explainBean = explainBean;
     }
 
-    public ExplainContext(String methodName, String mapperClassName) {
+    public ExplainContext(String methodName, String mapperResourceName) {
         this.methodName = methodName;
-        this.mapperClassName = mapperClassName;
+        this.mapperResourceName = mapperResourceName;
     }
 
-    public ExplainContext(ExplainBean explainBean, String methodName, String mapperClassName) {
+    public ExplainContext(ExplainBean explainBean, String methodName, String mapperResourceName) {
         this.explainBean = explainBean;
         this.methodName = methodName;
-        this.mapperClassName = mapperClassName;
+        this.mapperResourceName = mapperResourceName;
     }
 
     public ExplainBean getExplainBean() {
@@ -43,12 +43,12 @@ public class ExplainContext {
         this.methodName = methodName;
     }
 
-    public String getMapperClassName() {
-        return mapperClassName;
+    public String getMapperResourceName() {
+        return mapperResourceName;
     }
 
-    public void setMapperClassName(String mapperClassName) {
-        this.mapperClassName = mapperClassName;
+    public void setMapperResourceName(String mapperResourceName) {
+        this.mapperResourceName = mapperResourceName;
     }
 
     @Override
@@ -56,7 +56,7 @@ public class ExplainContext {
         return "ExplainContext{" +
                 "explainBean=" + explainBean +
                 ", methodName='" + methodName + '\'' +
-                ", mapperClassName='" + mapperClassName + '\'' +
+                ", mapperResourceName='" + mapperResourceName + '\'' +
                 '}';
     }
 }

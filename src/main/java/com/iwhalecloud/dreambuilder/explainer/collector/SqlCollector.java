@@ -1,5 +1,7 @@
 package com.iwhalecloud.dreambuilder.explainer.collector;
 
+import com.iwhalecloud.dreambuilder.explainer.model.ExplainContext;
+
 import java.util.List;
 
 /**
@@ -10,8 +12,9 @@ import java.util.List;
  */
 public interface SqlCollector {
     /**
-     * @param classes 收集的类
-     * @return sql script List
+     * 获取sql语句，包装为explainContext
+     *
+     * @return context
      */
-    List<String> collect(List<Class> classes);
+    List<ExplainContext> collect();
 }

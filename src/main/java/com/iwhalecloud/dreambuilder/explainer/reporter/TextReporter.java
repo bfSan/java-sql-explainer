@@ -31,7 +31,7 @@ public class TextReporter implements Reporter {
             StringBuilder textBuilder = new StringBuilder();
 
             //类名
-            textBuilder.append("ClassName: ").append(context.getMapperClassName()).append(NEWLINE_CHARACTER);
+            textBuilder.append("ClassName: ").append(context.getMapperResourceName()).append(NEWLINE_CHARACTER);
             //方法名
             textBuilder.append("MethodName: ").append(context.getMethodName()).append(NEWLINE_CHARACTER);
             //explain result
